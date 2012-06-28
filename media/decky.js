@@ -17,6 +17,7 @@ var deck = (function() {
         e.stopPropagation();
     });
     µ(document).on('keydown', function(e) {
+        window.foo = e;
         switch (e.which) {
             case 37:
             case 38:
@@ -29,6 +30,12 @@ var deck = (function() {
                 next();
                 e.preventDefault();
                 break;
+            case 70:
+                if (e.metaKey && e.shiftKey) {
+                    toggleFullScreen();
+                }
+                e.preventDefault();
+                break
         }
     });
 
