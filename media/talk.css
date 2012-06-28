@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+* {
+    font-weight: 300;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+kbd, code, pre {
+    font-family: monospace;
+}
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+a {
+    color: #adf;
+}
+section {
+    background-image: url(grain.png),
+                      -moz-linear-gradient(#394C58, #60747F);
+}
+section:after {
+    content: url(rocket.png);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mozilla Marketplace Slides</title>
+    <meta charset="utf-8">
+    <link rel="app-manifest" href="manifest.webapp">
+    <link rel="stylesheet" href="media/decky.css">
+    <link rel="stylesheet" href="media/talk.css">
+  </head>
+  <body>
+    <section>
+      <h1>Marketplace UI</h1>
+      <h2>Lessons, tricks, and various and sundry other things I think of</h2>
+    </section>
+    <section>
+      <h2>Questions?</h2>
+    </section>
+    <section>
+      <h1>Doing it "right"</h1>
+      <h2>(Mozilla is awesome)</h2>
+    </section>
+    <section>
+      <h1>
+        <s>harder</s><br>
+        <s>better</s><br>
+        faster<br>
+        <s>stronger</s>
+      </h1>
+    </section>
+    <section>
+      <ul>
+        <li><code>$.pjax</code>?
+        <li data-subslide=1><code>pushState</code>!
+        <li data-subslide=2>deep-linking
+        <li data-subslide=3>Django-friendly
+      </ul>
+    </section>
+    <section>
+      <h1><sup>Frag</sup><sub>ments</sub></h1>
+    </section>
+    <section>
+      <h1><code>lessc</code>++</h1>
+    </section>
+    <section style="font-size:100%">
+      <h2><a href="http://framelessgrid.com/">Frameless</a></h2>
+      <pre>
+@column: 48;    // The column-width of your grid in pixels
+@gutter: 24;    // The gutter-width of your grid in pixels
+@px: 1px;       // Multiply by this to make a number in px.
+
+.width(@cols:1) {
+    width: (@cols * (@column + @gutter) - @gutter) * @px;
+}
+.max-width(@cols:1) {
+    max-width: (@cols * (@column + @gutter) - @gutter) * @px;
+}
+      </pre>
+    </section>
+    <section>
+      <pre onclick="alert('Templating for booze and drugs!');">
+format('Templating for {0} and {1}!',
+       'fun', 'profit');
+
+var t = template('Templating for {0} and {1}!');
+
+alert(t('booze', 'drugs'));
+      </pre>
+    </section>
+    <section>
+      <h1>$.when(life_gets_hard)<br>
+      <span data-subslide=1>.done(Defer your troubles);</h1>
+    </section>
+    <section>
+      <h1>Real production code</h1>
+      <pre data-subslide=1>
+$.when(doPaypal(product))
+ .then(completePurchase);
+      </pre>
+    </section>
+    <section>
+      Other things
+    </section>
+    <footer>
+      <span id="slidenum"></span>
+    </footer>
+    <script src="media/µ.js"></script>
+    <script src="media/mozApp.js"></script>
+    <script src="media/decky.js"></script>
+  </body>
+</html>

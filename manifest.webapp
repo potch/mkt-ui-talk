@@ -1,0 +1,10 @@
+{
+    "name": "Mozilla Marketplace Slides",
+    "default_locale": "en-US",
+    "description": "Slides for jqCon Breakout Session on Mozilla Marketplace",
+    "locales": {},
+    "developer": {
+        "url": "http://mozilla.org",
+        "name": "Potch"
+    }
+}
